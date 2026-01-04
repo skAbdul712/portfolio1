@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio rabs — Portfolio</title>
+  <meta name="description" content="Portfolio rabs — Frontend developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Portfolio rabs</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hi — I’m Portfolio rabs</h1>
+          <p class="lead">I build responsive, user-friendly web applications with a focus on clean UI, performance, and accessibility.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn outline" href="assets/YourName_Resume.pdf" download>Download Resume</a>
+          </div>
+          <p class="socials">
+            <a href="https://github.com/skAbdul712" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://linkedin.com/in/shaik-rabbani-7341011a5" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Replace with your portrait -->
+          <img src="assets/portrait-placeholder.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>I am a Frontend Developer with hands-on experience in building responsive and user-friendly web applications using HTML, CSS, JavaScript, and React. I have successfully completed multiple frontend projects, focusing on clean UI design, performance, and usability.</p>
+      <p>I am currently expanding my technical skill set by learning SQL, Python, and Azure Data Factory (ADF) to strengthen my understanding of backend systems and data workflows. I hold a Bachelor’s degree in Civil Engineering from Saveetha Engineering College, Chennai (2021), and have transitioned into software development driven by a strong interest in technology and problem-solving.</p>
+      <p>I am a motivated learner with a passion for continuous improvement, aiming to grow as a full-stack and data-oriented developer while contributing to impactful software solutions.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Projects</h2>
+      <div id="projects-grid" class="projects-grid" aria-live="polite">
+        <!-- Project cards inserted by script.js -->
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>HTML & CSS / Responsive design</li>
+        <li>Accessibility & performance</li>
+        <li>Learning: SQL, Python, Azure Data Factory</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>Want to work together? Send me a message:</p>
+      <form id="contact-form" action="mailto:Rabbanishaik882@gmail.com" method="GET" onsubmit="return sendMail(event)">
+        <label>
+          Name
+          <input type="text" name="subject" required />
+        </label>
+        <label>
+          Message
+          <textarea name="body" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn" type="submit">Email me</button>
+          <a class="btn outline" href="mailto:Rabbanishaik882@gmail.com">Open mail client</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Portfolio rabs · <a href="https://github.com/skAbdul712" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
